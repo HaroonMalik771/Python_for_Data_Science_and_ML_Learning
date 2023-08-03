@@ -5,3 +5,5 @@ import pandas as pd
 homelessness = pd.read_csv("D:/Python\Python_for_Data_Science_and_ML_Learning/4_Data_Manipulation_with_pandas/1-Transforming_data_frame/homelessness.csv")
 
 print(homelessness.head())
+# Print information about homelessness
+print(homelessness.info())
