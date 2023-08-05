@@ -10,5 +10,15 @@ south_mid_atlantic = homelessness[(homelessness["region"] == "South Atlantic") |
 print(south_mid_atlantic)
 
 regions = ["South Atlantic","Mid-Atlantic"]
-south_mid_atlantic = homelessness["region"].isin(regions)
+south_mid_atlantic = homelessness[homelessness["region"].isin(regions)]
 print(south_mid_atlantic)
+
+
+# The Mojave Desert states
+canu = ["California", "Arizona", "Nevada", "Utah"]
+
+# Filter for rows in the Mojave Desert states
+mojave_homelessness = homelessness[homelessness["state"].isin(canu)]
+
+# See the result
+print(mojave_homelessness)
