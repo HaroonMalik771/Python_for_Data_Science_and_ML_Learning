@@ -11,7 +11,7 @@ sales_1_1 = sales_1_1[['date', 'weekly_sales']]
 # Sort sales_1_1 by date
 sales_1_1 = sales_1_1.sort_values("date")
 
-# Get the cumulative sum of weekly_sales, add as cum_weekly_sales col
+# Get the cumulative sum of weekly_sales, add as cum_weekly_sales column
 sales_1_1["cum_weekly_sales"] = sales_1_1["weekly_sales"].cumsum()
 
 # Get the cumulative max of weekly_sales, add as cum_max_sales col
